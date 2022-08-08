@@ -17,7 +17,7 @@ function Features({ features } : Props) {
         <p className="features__text">Return customers with NPS service, feedback and FeedbackHero loyalty assessment.</p>
         <ul className="features__list">
             {features.map((item) => {
-                    return (<li className="features__item">
+                    return (<li className="features__item" key={item.id}>
                         <img src={item.icon} alt="" className="features__item-icon" />
                         <h3 className="features__item-title">{item.title}</h3>
                         <p className="features__item-text">{item.description}</p>

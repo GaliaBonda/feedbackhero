@@ -10,6 +10,15 @@ const initialState: ITestimonial[] = [
         },
         comment: 'Some text with rewiev from client Some text with rewiev from client. Some text with rewiev from client Some text with rewiev from client . Some text with rewiev from client Some text with rewiev from client'
     },
+    {
+        client: {
+            name: 'Some Guy',
+            position: 'Some pro',
+            company: 'SomeCompany',
+            photo: './assets/client-photo.jpg',
+        },
+        comment: 'Another text'
+    }
 
 ];
 

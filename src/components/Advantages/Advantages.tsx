@@ -21,7 +21,7 @@ function Advantages({ advantages }: Props) {
         <ul className="advantages__list">
            {advantages.map((item) => {
             return (
-                <li className="advantages__item">
+                <li className="advantages__item" key={item.id}>
                     <img src={item.icon} alt="" className="advantages__item-icon" />
                     <h3 className="advantages__item-title">{item.title}</h3>
                     <h4 className="advantages__item-subtitle">{item.subtitle}</h4>

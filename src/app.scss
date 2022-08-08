@@ -1,8 +1,9 @@
 $fontcolor: rgba(0, 0, 0, 0.75);
 $separatorbg: #20273133;
 $border: rgba(0, 0, 0, 0.05);
+$btnhover: #03A8B7;
 
-body {
+body, blockquote {
     margin: 0;
     padding: 0;
 }
@@ -19,6 +20,9 @@ button {
     font-size: 1rem;
     color: $fontcolor;
     line-height: 1.5;
+}
+button {
+    padding: 0;
 }
 
 ul,

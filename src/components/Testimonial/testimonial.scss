@@ -1,0 +1,38 @@
+@import '../../app.scss';
+
+.testimonial {
+    
+    display: flex;
+    justify-content: space-between;
+    gap: 9.94em;
+
+    &__info {
+        flex: 0 1 48.75em;
+    }
+    &__media {
+        flex: 0 1 auto;
+    }
+    &__btns {
+        display: flex;
+        gap: 1.875em;
+        margin-top: 4.19em;
+    }
+    &__btn {
+        background-color: transparent;
+        border: none;
+        width: 3.125em;
+        height: 3.125em;
+    }
+    &__btn:hover svg circle {
+        fill: $btnhover;
+    }
+    &__btn:hover svg path {
+        fill: #fff;
+    }
+    &__btn-next {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+    
+}
