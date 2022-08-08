@@ -1,0 +1,19 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6.59em 4.16em 1.53em 12.5em;
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        border-radius: 15px;
+    }
+    &__title {
+        margin-bottom: 1.87em;
+    }
+    &__text {
+        margin-bottom: 3.39em;
+    }
+}

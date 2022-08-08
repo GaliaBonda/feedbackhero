@@ -1,0 +1,18 @@
+.features {
+    padding: 8.7em 12.5em 9.37em 12.5em;
+    &__title {
+        margin-bottom: 1.5em;
+    }
+    &__text {
+        margin-bottom: 3.06em;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1em;
+    }
+    &__item {
+        flex: 0 1 22em;
+    }
+}
