@@ -1,0 +1,13 @@
+.benefits {
+    padding: 0 12.5em 12.75em 12.5em;
+    display: flex;
+    justify-content: space-between;
+    gap: 3.75em;
+    align-items: center;
+    &__info {
+        flex: 0 0 22.5em;
+    }
+    &__media {
+        flex: 0 1 auto;
+    }
+}

@@ -3,6 +3,10 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2.25em 3.75em 1.5em 12.5em;
     border-bottom: 1px solid $separatorbg;
+    &__img {
+        flex: 0 0 12.5em;
+    }
 }

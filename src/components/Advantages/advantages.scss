@@ -1,0 +1,40 @@
+@import './../../app.scss';
+
+.advantages {
+    position: relative;
+    padding: 8.69em 12.5em 9.38em 12.5em;
+    &__subtitle {
+        position: absolute;
+        top: 8.69em;
+        left: 12.5em;
+    }
+    &__title {
+        padding-left: 26.25em;
+        margin-bottom: 1.5em;
+    }
+    &__text {
+        margin-bottom: 3.125em;
+        padding-left: 26.25em;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        flex: 0 1 22.5em;
+        &-icon {
+            width: 5.625em;
+            height: 5.625em;
+            padding: 1.5em;
+            border: 1px solid $border;
+            border-radius: 10px;
+            margin-bottom: 2.19em;
+        }
+        &-subtitle {
+            margin-bottom: 0.94em;
+        }
+    }
+    
+    
+}
