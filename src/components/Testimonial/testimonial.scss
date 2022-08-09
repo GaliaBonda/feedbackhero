@@ -3,16 +3,26 @@
 .testimonial {
     
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     gap: 9.94em;
 
     &__info {
+        // position: relative;
         flex: 0 1 48.75em;
+        display: grid;
+        &::before {
+            content: url('../../../public/assets/quote.svg');
+            position: absolute;
+            left: 26.25em;
+            width: 45px;
+            height: auto;
+        }
     }
     &__media {
         flex: 0 1 auto;
     }
     &__btns {
+        
         display: flex;
         gap: 1.875em;
         margin-top: 4.19em;

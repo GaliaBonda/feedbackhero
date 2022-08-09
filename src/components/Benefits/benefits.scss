@@ -10,4 +10,13 @@
     &__media {
         flex: 0 1 auto;
     }
+    &__text {
+        margin-bottom: 2em;
+    }
+    &__subtitle {
+        margin-bottom: 0.625em;
+    }
+    &__title {
+        margin-bottom: 0.5em;
+    }
 }

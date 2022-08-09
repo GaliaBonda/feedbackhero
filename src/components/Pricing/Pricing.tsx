@@ -31,7 +31,7 @@ function Pricing({prices} : Props) {
                             )
                         })}
                     </ul>
-                    <button className="pricing__price-choose-btn">Choose this plan</button>
+                    <button className="pricing__price-choose-btn app-btn">Choose this plan</button>
                 </li>
                 );
             })}

@@ -24,22 +24,22 @@ function Clients({ testimonials }: Props) {
         logo: './assets/saras.svg',
     },
     {
+        id: 2,
+        name: 'PosteItaliane',
+        logo: './assets/posteitaliane.svg',
+    },
+    {
         id: 3,
         name: 'PosteItaliane',
         logo: './assets/posteitaliane.svg',
     },
     {
         id: 4,
-        name: 'PosteItaliane',
-        logo: './assets/posteitaliane.svg',
-    },
-    {
-        id: 3,
         name: 'Leonardo',
         logo: './assets/leonardo.svg',
     },
     {
-        id: 4,
+        id: 5,
         name: 'Ferrero',
         logo: './assets/ferrero.svg',
     }

@@ -12,9 +12,13 @@
         border-radius: 15px;
     }
     &__title {
-        margin-bottom: 1.87em;
+        margin-bottom: 0.65em;
     }
     &__text {
-        margin-bottom: 3.39em;
+        font-size: 1.625em;
+        margin-bottom: 2.08em;
+    }
+    &__info {
+        width: 34em;
     }
 }

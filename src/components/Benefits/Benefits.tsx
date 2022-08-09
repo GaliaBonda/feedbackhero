@@ -13,7 +13,7 @@ export default function Benefits() {
                 FeedbackHero is effective in diferrent areas of business: restaurants, hotels,
                 E-commerce, Auto service, Auto salons & Lease, Beauty & Cosmetics and other business areas
             </p>
-            <button className="benefits__btn">Start using</button>
+            <button className="benefits__btn app-btn">Start using</button>
         </div>
     </div>);
 }

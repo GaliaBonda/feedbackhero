@@ -3,38 +3,51 @@
 .advantages {
     position: relative;
     padding: 8.69em 0 9.38em 0;
+
     &__subtitle {
         position: absolute;
         top: 8.69em;
         left: 0;
     }
+
     &__title {
         padding-left: 9.13em;
         margin-bottom: 1.5em;
     }
+
     &__text {
         margin-bottom: 3.125em;
         padding-left: 26.25em;
     }
+
     &__list {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
+
     &__item {
         flex: 0 1 22.5em;
+        box-shadow: 0px 15px 30px $border;
+        border-radius: 10px;
+        padding: 3.125em 1.875em 3.375em 1.875em;
+        text-align: center;
+
         &-icon {
             width: 5.625em;
             height: 5.625em;
             padding: 1.5em;
+            background: linear-gradient(134.83deg, #FCFCFC 4.17%, rgba(252, 252, 252, 0) 96.67%);
             border: 1px solid $border;
+            filter: drop-shadow(0px 5px 12px $border);
             border-radius: 10px;
             margin-bottom: 2.19em;
         }
+
         &-subtitle {
             margin-bottom: 0.94em;
         }
     }
-    
-    
+
+
 }

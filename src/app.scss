@@ -1,12 +1,17 @@
 $fontcolor: rgba(0, 0, 0, 0.75);
+$bg: #fff;
+$accent: #000;
 $separatorbg: #20273133;
+$innertitle: #202731;
 $border: rgba(0, 0, 0, 0.05);
+$thinborder: rgba(0, 0, 0, 0.1);
 $btnhover: #03A8B7;
 $priceborder: #C6E5FD;
 $footerbg: #F8F8F8;
 $copyrightbg: #202731;
 $titlecolor: #181E25;
 $subtitlecolor: #03A8B7;
+$linkfont: #202731;
 
 body,
 blockquote {
@@ -30,6 +35,7 @@ button {
 
 button {
     padding: 0;
+    border: none;
 }
 
 ul,
@@ -52,8 +58,14 @@ img {
     height: auto;
 }
 
-.app {
+body {
     padding: 0.5em 12.5em;
+    
+}
+
+.app {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .title {
@@ -62,8 +74,24 @@ img {
     font-weight: 500;
     color: $titlecolor;
 }
+
 .subtitle {
     font-weight: 500;
     text-transform: uppercase;
     color: $subtitlecolor;
+}
+
+.app-btn {
+    background: linear-gradient(93.31deg, #006AD8 1.67%, #01ACB4 98.59%), rgba(196, 196, 196, 0.05);
+    backdrop-filter: blur(37px);
+    border-radius: 5px;
+    color: $bg;
+    text-transform: uppercase;
+    padding: 0.93em 2em;
+
+}
+
+.link {
+    color: $linkfont;
+    text-decoration: none;
 }

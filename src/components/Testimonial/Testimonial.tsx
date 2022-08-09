@@ -15,7 +15,7 @@ export default function Testimonial({ client, comment, changeComment }: Props) {
             <img src={client.photo} alt="Client" className="testimonial__img" />
         </div>
 
-        <blockquote className="testimonial__info">
+        <div className="testimonial__info">
             <p className="testimonial__comment">{comment}</p>
             <p className="testimonial__author">{client.name}, {client.position} <span>{client.company}</span></p>
             <div className="testimonial__btns">
@@ -32,6 +32,6 @@ export default function Testimonial({ client, comment, changeComment }: Props) {
                     </svg>
                 </button>
             </div>
-        </blockquote>
+        </div>
     </div>);
 }

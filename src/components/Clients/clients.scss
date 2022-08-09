@@ -3,4 +3,13 @@
 .clients {
     position: relative;
     padding: 8.7em 0 9.37em 0;
+    &__title {
+        padding-left: 9.13em;
+        margin-bottom: 1.35em;
+    }
+    &__subtitle {
+        position: absolute;
+        top: 8.7em;
+        left: 0;
+    }
 }

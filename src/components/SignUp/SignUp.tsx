@@ -12,7 +12,7 @@ export default function SignUp() {
             </p>
             <div className="sign-up__btns">
                 <button className="sign-up__sign-btn">SIGN UP</button>
-                <button className="sign-up__request-btn">Leave a request</button>
+                <button className="sign-up__request-btn app-btn">Leave a request</button>
             </div>
         </div>
         <div className="sign-up__media">
