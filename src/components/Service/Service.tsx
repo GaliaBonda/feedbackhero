@@ -16,8 +16,8 @@ export default function Service() {
     }]; 
 
     return (<div className='service'>
-        <h2 className='service__subtitle'>our service is</h2>
-        <h2 className='service__title'>FeedbackHero in Numbers</h2>
+        <h2 className='service__subtitle subtitle'>our service is</h2>
+        <h2 className='service__title title'>FeedbackHero in Numbers</h2>
         <p className="service__text">The FeedbackHero is growing right now and getting more and more every day. Join our service now!</p>
         <ul className="service__numbers">
             {serviceInNums.map((item, index) => {

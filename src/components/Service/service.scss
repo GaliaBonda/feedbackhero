@@ -1,8 +1,8 @@
 .service {
-    padding: 8.7em 12.5em 9.37em 12.5em;
+    padding: 8.7em 0 9.37em 0;
     position: relative;
     &__title {
-        padding-left: 26.25em;
+        padding-left: 9.13em;
     }
     &__text {
         padding-left: 26.25em;
@@ -11,7 +11,7 @@
     &__subtitle {
         position: absolute;
         top: 8.7em;
-        left: 12.5em;
+        left: 0;
     }
     &__numbers {
         display: flex;

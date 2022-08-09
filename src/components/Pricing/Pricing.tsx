@@ -12,8 +12,8 @@ interface State {
 
 function Pricing({prices} : Props) {
     return (<div className='pricing'>
-        <h2 className='pricing__subtitle'>Pricing</h2>
-        <h2 className='pricing__title'>We have prepared ideal solutions for your business</h2>
+        <h2 className='pricing__subtitle subtitle'>Pricing</h2>
+        <h2 className='pricing__title title'>We have prepared ideal solutions for your business</h2>
         <p className="pricing__text">Small or medium business, or even enterprise: choose your format of work with feedback and NPS!</p>
         <ul className="pricing__list">
             {prices.map((item) => {

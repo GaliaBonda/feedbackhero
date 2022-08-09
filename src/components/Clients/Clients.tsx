@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import ITestimonial from '../../common/interfaces/ITestimonial';
+import Companies from '../Companies/Companies';
 import Testimonial from '../Testimonial/Testimonial';
 import './clients.scss';
 
@@ -12,6 +13,38 @@ interface State {
 }
 
 function Clients({ testimonials }: Props) {
+    const companies = [{
+        id: 0,
+        name: 'Ferrero',
+        logo: './assets/ferrero.svg',
+    },
+    {
+        id: 1,
+        name: 'Saras',
+        logo: './assets/saras.svg',
+    },
+    {
+        id: 3,
+        name: 'PosteItaliane',
+        logo: './assets/posteitaliane.svg',
+    },
+    {
+        id: 4,
+        name: 'PosteItaliane',
+        logo: './assets/posteitaliane.svg',
+    },
+    {
+        id: 3,
+        name: 'Leonardo',
+        logo: './assets/leonardo.svg',
+    },
+    {
+        id: 4,
+        name: 'Ferrero',
+        logo: './assets/ferrero.svg',
+    }
+    ];
+    
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
     const changeComment = (nextComment: boolean) => {
@@ -27,10 +60,12 @@ function Clients({ testimonials }: Props) {
     }
 
     return (<div className='clients'>
-        <h2 className='clients__subtitle'>Our clients</h2>
-        <h2 className='clients__title'>We are trusted</h2>
+        <h2 className='clients__subtitle subtitle'>Our clients</h2>
+        <h2 className='clients__title title'>We are trusted</h2>
         <Testimonial client={testimonials[currentTestimonial].client} comment={testimonials[currentTestimonial].comment} 
         changeComment={changeComment}/>
+        <Companies companies={companies}/>
+        
         
     </div>);
 }

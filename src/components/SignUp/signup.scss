@@ -1,12 +1,12 @@
 .sign-up {
-    padding: 8.7em 12.5em 9.37em 12.5em;
+    padding: 8.7em 0 9.37em 0;
     display: flex;
     justify-content: flex-end;
     gap: 5.81em;
     &__main {
         flex: 0 1 22.5em;
     }
-    &__img {
+    &__media {
         flex: 0 1 30%;
     }
     &__subtitle {

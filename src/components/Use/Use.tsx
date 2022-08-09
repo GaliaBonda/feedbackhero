@@ -4,8 +4,8 @@ import './use.scss';
 export default function Use() {
     return (<div className='use'>
         <div className="use__info">
-            <h2 className='use__subtitle'>Easy to use</h2>
-            <h2 className="use__title">How it works?</h2>
+            <h2 className='use__subtitle subtitle'>Easy to use</h2>
+            <h2 className="use__title title">How it works?</h2>
             <div className="use__text">
                 <p className="use__subtext">
                     We generate a QR code and a short link.

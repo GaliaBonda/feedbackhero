@@ -2,7 +2,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 6.59em 4.16em 1.53em 12.5em;
+    padding: 6.59em 0 1.53em 0;
+    margin-right: -8.75em;
     &__list {
         display: flex;
         flex-direction: column;

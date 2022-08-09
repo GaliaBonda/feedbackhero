@@ -24,13 +24,12 @@ export default function Footer() {
         <img className='footer__img logo-img' src="./assets/Feedback-hero-logo.svg" alt="Feedback Hero Logo" />
         <div className="footer__main">
             <div className="footer__cta">
-                <h2 className="footer__title">Your Business Superhero</h2>
+                <h2 className="footer__title title">Your Business Superhero</h2>
                 <button className="footer__btn">BUY NOW</button>
             </div>
             <AppList title='Quick links' list={quickLinks} />
             <AppList title='Legal information' list={legalInfo} />
             <AppList title='Contact' list={contacts} />
         </div>
-        <Copyright />
     </div>);
 }

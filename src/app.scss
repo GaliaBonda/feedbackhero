@@ -5,8 +5,11 @@ $btnhover: #03A8B7;
 $priceborder: #C6E5FD;
 $footerbg: #F8F8F8;
 $copyrightbg: #202731;
+$titlecolor: #181E25;
+$subtitlecolor: #03A8B7;
 
-body, blockquote {
+body,
+blockquote {
     margin: 0;
     padding: 0;
 }
@@ -24,6 +27,7 @@ button {
     color: $fontcolor;
     line-height: 1.5;
 }
+
 button {
     padding: 0;
 }
@@ -44,6 +48,22 @@ ul {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
+}
+
+.app {
+    padding: 0.5em 12.5em;
+}
+
+.title {
+    font-size: 2.875em;
+    line-height: 1.19;
+    font-weight: 500;
+    color: $titlecolor;
+}
+.subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $subtitlecolor;
 }
