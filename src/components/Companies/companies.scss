@@ -4,13 +4,15 @@
     justify-content: space-between;
     gap: 3.75em;
     &__title {
-        width: 7.82em;
+        flex: 0 1 7.82em;
     }
 
     &__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: end;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        // flex-wrap: wrap;
+        // justify-content: end;
         gap: 1.875em;
 
         &-item {

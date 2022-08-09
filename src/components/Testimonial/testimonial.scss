@@ -3,13 +3,27 @@
 .testimonial {
     
     display: flex;
-    // justify-content: space-between;
     gap: 9.94em;
+    &__comment {
+        font-size: 1.625em;
+        font-weight: 300;
+        color: $innertitle;
+        line-height: 1.2;
 
+    }
+    &__author {
+        font-weight: 600;
+        color: $innertitle;
+        span {
+            display: block;
+            opacity: 0.5;
+        }
+    }
     &__info {
-        // position: relative;
         flex: 0 1 48.75em;
         display: grid;
+        // grid-template-rows: min-content;
+        row-gap: 0.5em;
         &::before {
             content: url('../../../public/assets/quote.svg');
             position: absolute;
@@ -22,10 +36,9 @@
         flex: 0 1 auto;
     }
     &__btns {
-        
         display: flex;
         gap: 1.875em;
-        margin-top: 4.19em;
+        align-self: end;
     }
     &__btn {
         background-color: transparent;
