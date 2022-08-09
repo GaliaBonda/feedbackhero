@@ -12,9 +12,14 @@ interface State {
 
 function Features({ features }: Props) {
     return (<div className='features'>
-        <h2 className='features__subtitle subtitle'>Features</h2>
-        <h2 className='features__title title'>Why FeedbackHero?</h2>
-        <p className="features__text">Return customers with NPS service, feedback and FeedbackHero loyalty assessment.</p>
+        <div className="features__top">
+            <h2 className='features__subtitle subtitle'>Features</h2>
+            <div className="features__top-info">
+                <h2 className='features__title title'>Why FeedbackHero?</h2>
+                <p className="features__text">Return customers with NPS service, feedback and FeedbackHero loyalty assessment.</p>
+            </div>
+        </div>
+
         <ul className="features__list">
             {features.map((item) => {
                 return (<li className="features__item" key={item.id}>

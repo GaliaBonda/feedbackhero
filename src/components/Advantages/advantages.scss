@@ -1,26 +1,14 @@
 @import './../../app.scss';
 
 .advantages {
-    position: relative;
     padding: 8.69em 0 9.38em 0;
-
-    &__subtitle {
-        position: absolute;
-        top: 8.69em;
-        left: 0;
-    }
-
-    &__title {
-        padding-left: 9.13em;
-        margin-bottom: 1.5em;
-    }
-
-    &__text {
+    &__top {
+        display: flex;
+        gap: 15.75em;
         margin-bottom: 3.125em;
-        padding-left: 26.25em;
-    }
-
-    &__list {
+    }&__title {
+        margin-bottom: 0.5em;
+    }&__list {
         display: flex;
         justify-content: space-between;
         align-items: center;

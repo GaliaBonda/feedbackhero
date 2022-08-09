@@ -3,13 +3,21 @@
 .testimonial {
     
     display: flex;
-    gap: 9.94em;
+    gap: 3.75em;
     &__comment {
         font-size: 1.625em;
         font-weight: 300;
         color: $innertitle;
         line-height: 1.2;
-
+        position: relative;
+        &::before {
+            content: url('../../../public/assets/quote.svg');
+            width: 45px;
+            height: auto;
+            display: block;
+            position: absolute;
+            left: -3.8em;
+        }
     }
     &__author {
         font-weight: 600;
@@ -22,15 +30,8 @@
     &__info {
         flex: 0 1 48.75em;
         display: grid;
-        // grid-template-rows: min-content;
+        padding-left: 6.19em;
         row-gap: 0.5em;
-        &::before {
-            content: url('../../../public/assets/quote.svg');
-            position: absolute;
-            left: 26.25em;
-            width: 45px;
-            height: auto;
-        }
     }
     &__media {
         flex: 0 1 auto;

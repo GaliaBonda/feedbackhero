@@ -44,7 +44,7 @@ function Clients({ testimonials }: Props) {
         logo: './assets/ferrero.svg',
     }
     ];
-    
+
     const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
     const changeComment = (nextComment: boolean) => {
@@ -60,13 +60,16 @@ function Clients({ testimonials }: Props) {
     }
 
     return (<div className='clients'>
-        <h2 className='clients__subtitle subtitle'>Our clients</h2>
-        <h2 className='clients__title title'>We are trusted</h2>
-        <Testimonial client={testimonials[currentTestimonial].client} comment={testimonials[currentTestimonial].comment} 
-        changeComment={changeComment}/>
-        <Companies companies={companies}/>
-        
-        
+        <div className="clients__top">
+            <h2 className='clients__subtitle subtitle'>Our clients</h2>
+            <h2 className='clients__title title'>We are trusted</h2>
+        </div>
+
+        <Testimonial client={testimonials[currentTestimonial].client} comment={testimonials[currentTestimonial].comment}
+            changeComment={changeComment} />
+        <Companies companies={companies} />
+
+
     </div>);
 }
 
