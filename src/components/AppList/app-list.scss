@@ -1,8 +1,14 @@
+@import '../../app.scss';
+
 .app-list {
     display: flex;
     flex-direction: column;
     gap: 0.75em;
     &__title {
-        margin-bottom: 1.625em;
+        margin-bottom: 1.25em;
+        font-weight: 500;
+font-size: 1.25em;
+line-height: 1.4;
+color: $accent;
     }
 }

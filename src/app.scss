@@ -11,6 +11,12 @@ $footerbg: #F8F8F8;
 $titlecolor: #181E25;
 $subtitlecolor: #03A8B7;
 $linkfont: #202731;
+$lightbg: #E0F0FD;
+$accentfont: #3174C4;
+$priceaccent: rgba(18, 18, 18, 0.8);
+$price: #404040;
+$listfont: #4C4F56;
+
 
 @font-face {
     font-family: 'Gilroy';
@@ -82,6 +88,7 @@ h4 {
     margin: 0;
     padding: 0;
     font-size: 1rem;
+    font-weight: 400;
 }
 
 ul {
@@ -94,7 +101,7 @@ img {
 }
 
 body {
-    padding: 0.5em 12.5em;
+    padding: 0 12.5em;
     
 }
 

@@ -35,6 +35,9 @@
     &__media {
         flex: 0 1 auto;
     }
+    &__img {
+        border-radius: 15px;
+    }
     &__btns {
         display: flex;
         gap: 1.875em;

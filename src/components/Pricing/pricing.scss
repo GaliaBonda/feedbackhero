@@ -5,9 +5,10 @@
     padding: 8.7em 0 9.37em 0;
     &__title {
         padding-left: 9.13em;
+        margin-bottom: 0.5em;
     }
     &__text {
-        margin-bottom: 1.875em;
+        margin-bottom: 3.125em;
         padding-left: 26.25em;
     }
     &__subtitle {
@@ -20,25 +21,5 @@
         justify-content: center;
         align-items: stretch;
         gap: 3.75em;
-    }
-
-    &__price {
-        &-item {
-            padding: 2.5em; 
-            border: 1px solid $priceborder;
-            border-radius: 10px;
-            display: grid;
-            grid-template-rows: min-content;
-        }
-        &-choose-btn {
-            margin-top: 3.125em;
-            text-transform: none;
-        }
-    }
-
-
-    &__prices {
-        display: flex;
-        justify-content: space-between;
     }
 }

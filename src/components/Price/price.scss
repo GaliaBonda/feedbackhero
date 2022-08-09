@@ -1,0 +1,59 @@
+@import '../../app.scss';
+
+.price {
+    padding: 2.5em;
+    border: 1px solid $priceborder;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: min-content;
+
+    &__type {
+        background-color: $lightbg;
+        width: min-content;
+        color: $accentfont;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0.25em 0.75em;
+        border-radius: 5px;
+        margin-bottom: 1.66em;
+    }
+
+    &__choose-btn {
+        margin-top: 3.125em;
+        text-transform: none;
+    }
+
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.44em;
+    }
+
+    &__permonth {
+        font-weight: 700;
+        font-size: 2.875em;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $priceaccent;
+    }
+    &__peryear {
+        color: $price;
+        font-weight: 500;
+        span {
+            display: block;
+            color: $accent;
+            opacity: 0.5;
+        }
+    }
+    &__description {
+        margin-bottom: 2.375em;
+    }
+    &__pro {
+        color: $listfont;
+        &::before {
+            content: url('../../../public//assets//checkmark.svg');
+            margin-right: 1.25em;
+        }
+    }
+}

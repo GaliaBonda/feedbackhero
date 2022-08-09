@@ -3,10 +3,12 @@
     position: relative;
     &__title {
         padding-left: 9.13em;
+        margin-bottom: 0.5em;
     }
     &__text {
         padding-left: 26.25em;
         margin-bottom: 3.375em;
+        max-width: 63em;
     }
     &__subtitle {
         position: absolute;

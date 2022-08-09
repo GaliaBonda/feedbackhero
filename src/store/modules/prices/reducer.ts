@@ -6,7 +6,7 @@ const initialState: IPrice[] = [
         type: 'start',
         perMonth: '€49',
         perYear: '€588',
-        description: '10% discount on early payment.The best soution for small business.',
+        description: '10% discount on early payment. The best soution for small business.',
         pros: ['1 Business location', '1 QR Code', 'Custom branding'],
     },
     {
@@ -14,7 +14,7 @@ const initialState: IPrice[] = [
         type: 'Standart',
         perMonth: '€150',
         perYear: '€588',
-        description: '10% discount on early payment.The best for medium business.',
+        description: '10% discount on early payment. The best for medium business.',
         pros: ['3 Business locations', '18 QR Codes', 'Custom urls and branding', 'Unlimited questions'],
     },
     {
@@ -22,7 +22,7 @@ const initialState: IPrice[] = [
         type: 'Premium',
         perMonth: '€250',
         perYear: '€588',
-        description: '10% discount on early payment.All-in-one for interprises.',
+        description: '10% discount on early payment. All-in-one for interprises.',
         pros: ['Unlimited QR areas', 'Unlimited reviews', 'Unlimited questions', 'Custom urls and branding', 'Custom questionaries'],
     },
 ];

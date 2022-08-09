@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import IPrice from '../../common/interfaces/IPrice';
+import Price from '../Price/Price';
 import './pricing.scss';
 
 interface Props {
@@ -17,22 +18,9 @@ function Pricing({prices} : Props) {
         <p className="pricing__text">Small or medium business, or even enterprise: choose your format of work with feedback and NPS!</p>
         <ul className="pricing__list">
             {prices.map((item) => {
-                return (<li className="pricing__price-item" key={item.id}>
-                    <p className="pricing__price-type">{item.type}</p>
-                    <div className="pricing__prices">
-                        <p className="pricing__price-permonth">{item.perMonth}</p>
-                        <p className="pricing__price-peryear">{item.perYear} <span>per year</span></p>
-                    </div>
-                    <p className="pricing__price-description">{item.description}</p>
-                    <ul className="pricing__price-pros">
-                        {item.pros.map((pro, index) => {
-                            return (
-                                <li className="pricing__price-pro" key={index}>{pro}</li>
-                            )
-                        })}
-                    </ul>
-                    <button className="pricing__price-choose-btn app-btn">Choose this plan</button>
-                </li>
+                return (
+                    <Price key={item.id} type={item.type} perMonth={item.perMonth} perYear={item.perYear} 
+                    description={item.description} pros={item.pros} id={item.id}/>
                 );
             })}
         </ul>
