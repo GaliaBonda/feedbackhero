@@ -1,0 +1,23 @@
+.service {
+    padding: 8.7em 12.5em 9.37em 12.5em;
+    position: relative;
+    &__title {
+        padding-left: 26.25em;
+    }
+    &__text {
+        padding-left: 26.25em;
+        margin-bottom: 3.375em;
+    }
+    &__subtitle {
+        position: absolute;
+        top: 8.7em;
+        left: 12.5em;
+    }
+    &__numbers {
+        display: flex;
+        justify-content: space-between;
+        &-num {
+            font-size: 4.125em;
+        }
+    }
+}

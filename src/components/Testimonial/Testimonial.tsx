@@ -12,7 +12,7 @@ interface Props {
 export default function Testimonial({ client, comment, changeComment }: Props) {
     return (<div className="testimonial">
         <div className="testimonial__media">
-            <img src={client.photo} alt="Client photo" className="testimonial__img" />
+            <img src={client.photo} alt="Client" className="testimonial__img" />
         </div>
 
         <blockquote className="testimonial__info">

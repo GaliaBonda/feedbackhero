@@ -1,0 +1,42 @@
+@import '../../app.scss';
+
+.pricing {
+    position: relative;
+    padding: 8.7em 12.5em 9.37em 12.5em;
+    &__title, &__text {
+        padding-left: 26.25em;
+    }
+    &__text {
+        margin-bottom: 1.875em;
+    }
+    &__subtitle {
+        position: absolute;
+        top: 8.7em;
+        left: 12.5em;
+    }
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 3.75em;
+    }
+
+    &__price {
+        &-item {
+            padding: 2.5em; 
+            border: 1px solid $priceborder;
+            border-radius: 10px;
+            display: grid;
+            grid-template-rows: min-content;
+        }
+        &-choose-btn {
+            margin-top: 3.125em;
+        }
+    }
+
+
+    &__prices {
+        display: flex;
+        justify-content: space-between;
+    }
+}
