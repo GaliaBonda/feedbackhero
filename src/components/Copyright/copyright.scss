@@ -1,0 +1,11 @@
+@import '../../app.scss';
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    background-color: $copyrightbg;
+    color: $footerbg;
+    padding: 0.94em 12.5em;
+    margin-left: -12.5em;
+    margin-right: -12.5em;
+}

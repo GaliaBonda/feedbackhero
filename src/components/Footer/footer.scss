@@ -1,0 +1,14 @@
+@import '../../app.scss';
+
+.footer {
+    background-color: $footerbg;
+    padding: 6em 12.5em 0 12.5em;
+    &__img {
+        width: 12.5em;
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6.31em;
+    }
+}
