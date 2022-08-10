@@ -33,7 +33,7 @@
         row-gap: 2em;
     }
     &__media {
-        text-align: center;
+        // text-align: center;
         flex: 0 1 auto;
     }
     &__img {
@@ -68,9 +68,6 @@
     .testimonial {
         &__info {
             padding-left: 0;
-        }
-        &__media {
-            flex-grow: 1;
         }
     }
 }

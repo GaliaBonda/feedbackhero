@@ -141,5 +141,19 @@ img {
     * {
         flex-wrap: wrap;
     }
+    .app {
+        padding: 0 10em;
+    }
+    .main {
+        margin-right: 0;
+    }
+    .header {
+        margin-left: -10em;
+        margin-right: -10em;
+        &__inner {
+            margin-left: 10em;
+            margin-right: 10em;
+        }
+    }
 }
 

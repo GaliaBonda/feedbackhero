@@ -27,7 +27,7 @@
     .main {
         gap: 3em;
         &__info {
-            flex-grow: 1;
+            flex: 1 1 34em;
         }
     }
 }
