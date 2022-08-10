@@ -4,7 +4,7 @@ import './benefits.scss';
 export default function Benefits() {
     return (<div className='benefits'>
         <div className="benefits__media">
-            <img src="./assets/benefits.jpg" alt="" className="use__img" width="780" height="500" />
+            <img src="./assets/benefits.jpg" alt="" className="benefits__img" width="780" height="500" />
         </div>
         <div className="benefits__info">
             <h2 className='benefits__subtitle subtitle'>Who’ll benefit?</h2>

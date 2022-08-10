@@ -9,6 +9,8 @@ export default function Main() {
             <p className="main__text">The best tool for user satisfaction research, feedback, market research and analytics.</p>
             <button className="main__btn app-btn">TRY NOW</button>
         </div>
-        <img src="./assets/Survey-resault-1.jpg" alt="Survey result example" className="main__img" />
+        <div className="main__media">
+            <img src="./assets/Survey-resault-1.jpg" alt="Survey result example" className="main__img" />
+        </div>
     </div>);
 }

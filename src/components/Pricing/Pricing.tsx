@@ -11,16 +11,20 @@ interface State {
     prices: IPrice[];
 }
 
-function Pricing({prices} : Props) {
+function Pricing({ prices }: Props) {
     return (<div className='pricing'>
-        <h2 className='pricing__subtitle subtitle'>Pricing</h2>
-        <h2 className='pricing__title title'>We have prepared ideal solutions for your business</h2>
-        <p className="pricing__text">Small or medium business, or even enterprise: choose your format of work with feedback and NPS!</p>
+        <div className="pricing__top">
+            <h2 className='pricing__subtitle subtitle'>Pricing</h2>
+            <div className="pricing__top-info">
+                <h2 className='pricing__title title'>We have prepared ideal solutions for your business</h2>
+                <p className="pricing__text">Small or medium business, or even enterprise: choose your format of work with feedback and NPS!</p>
+            </div>
+        </div>
         <ul className="pricing__list">
             {prices.map((item) => {
                 return (
-                    <Price key={item.id} type={item.type} perMonth={item.perMonth} perYear={item.perYear} 
-                    description={item.description} pros={item.pros} id={item.id}/>
+                    <Price key={item.id} type={item.type} perMonth={item.perMonth} perYear={item.perYear}
+                        description={item.description} pros={item.pros} id={item.id} />
                 );
             })}
         </ul>

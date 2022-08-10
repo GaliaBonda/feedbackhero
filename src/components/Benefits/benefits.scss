@@ -1,14 +1,13 @@
 .benefits {
     padding-bottom: 12.75em;
     display: flex;
-    justify-content: space-between;
     gap: 3.75em;
     align-items: center;
     &__info {
         flex: 0 0 22.5em;
     }
     &__media {
-        flex: 0 1 auto;
+        flex: 0 1 60%;
     }
     &__text {
         margin-bottom: 2em;
@@ -21,5 +20,19 @@
     }
     &__img {
         border-radius: 20px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .benefits {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        &__info {
+            flex-grow: 1;
+        }
+        &__media {
+            flex-grow: 1;
+        }
     }
 }

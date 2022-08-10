@@ -16,7 +16,7 @@ import Use from './components/Use/Use';
 function App() {
   return (
     <div className="app">
-      <Header />
+        <Header />
       <Main />
       <Features />
       <Use />

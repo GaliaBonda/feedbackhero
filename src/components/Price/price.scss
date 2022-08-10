@@ -6,6 +6,7 @@
     border-radius: 10px;
     display: grid;
     grid-template-rows: min-content;
+    flex: 0 0 22.5em;
 
     &__type {
         background-color: $lightbg;

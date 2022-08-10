@@ -1,7 +1,6 @@
 @import '../../app.scss';
 
 .testimonial {
-    
     display: flex;
     gap: 3.75em;
     &__comment {
@@ -31,9 +30,10 @@
         flex: 0 1 48.75em;
         display: grid;
         padding-left: 6.19em;
-        row-gap: 0.5em;
+        row-gap: 2em;
     }
     &__media {
+        text-align: center;
         flex: 0 1 auto;
     }
     &__img {
@@ -62,4 +62,15 @@
         }
     }
     
+}
+
+@media screen and (max-width: 1200px) {
+    .testimonial {
+        &__info {
+            padding-left: 0;
+        }
+        &__media {
+            flex-grow: 1;
+        }
+    }
 }

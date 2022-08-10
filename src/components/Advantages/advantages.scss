@@ -2,15 +2,22 @@
 
 .advantages {
     padding: 8.69em 0 9.38em 0;
+
     &__top {
         display: flex;
         gap: 15.75em;
         margin-bottom: 3.125em;
-    }&__title {
+        &-info {
+            flex: 0 1 48.75em;
+        }
+    }
+    &__title {
         margin-bottom: 0.5em;
-    }&__list {
+    }
+
+    &__list {
         display: flex;
-        justify-content: space-between;
+        gap: 3.75em;
         align-items: center;
     }
 
@@ -36,6 +43,20 @@
             margin-bottom: 0.94em;
         }
     }
+}
 
-
+@media screen and (max-width: 1200px) {
+    .advantages {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        &__top {
+            gap: 3em;
+            &-info {
+                flex-grow: 1;
+            }
+        }
+        &__list {
+            justify-content: center;
+        }
+    }
 }

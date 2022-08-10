@@ -1,21 +1,22 @@
 @import '../../app.scss';
 
 .sign-up {
-    position: relative;
-    padding: 8.7em 0 9.37em 26.25em;
+    padding: 8.7em 0 9.37em 0;
     display: flex;
     // justify-content: flex-end;
-    gap: 5.81em;
+    gap: 22.4em;
+    &__subtitle {
+        flex: 0 0 3.81em;
+    }
+    &__info {
+        display: flex;
+        gap: 5.81em;
+    }
     &__main {
         flex: 0 1 22.5em;
     }
     &__media {
-        flex: 0 1 50%;
-    }
-    &__subtitle {
-        position: absolute;
-        left: 0;
-        top: 8.7em;
+        flex: 0 1 auto;
     }
     &__title {
         font-size: 2.875em;
@@ -34,5 +35,20 @@
         padding: 0.93em 2em;
         border-radius: 5px;
         background-color: $accent;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    
+    .sign-up {
+        gap: 3em;
+        padding-top: 3em;
+        padding-bottom: 3em;
+        &__main {
+            flex-grow: 1;
+        }
+        &__media {
+            flex-grow: 1;
+        }
     }
 }

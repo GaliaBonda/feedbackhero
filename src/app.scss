@@ -100,14 +100,13 @@ img {
     height: auto;
 }
 
-body {
-    padding: 0 12.5em;
-    
-}
+// .container {
+//     max-width: calc(1600px + 2 * 12.5em);
+//     margin: 0 auto;
+// }
 
 .app {
-    max-width: 1600px;
-    margin: 0 auto;
+    padding: 0 12.5em;
 }
 
 .title {
@@ -137,3 +136,10 @@ body {
     color: $linkfont;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1200px) {
+    * {
+        flex-wrap: wrap;
+    }
+}
+

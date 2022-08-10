@@ -1,25 +1,39 @@
 @import '../../app.scss';
 
 .pricing {
-    position: relative;
     padding: 8.7em 0 9.37em 0;
+    &__top {
+        display: flex;
+        gap: 22.31em;
+        margin-bottom: 3.125em;
+        &-info {
+            flex: 0 1 48.75em;
+        }
+    }
     &__title {
-        padding-left: 9.13em;
         margin-bottom: 0.5em;
     }
-    &__text {
-        margin-bottom: 3.125em;
-        padding-left: 26.25em;
-    }
-    &__subtitle {
-        position: absolute;
-        top: 8.7em;
-        left: 0;
-    }
+    
     &__list {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: stretch;
         gap: 3.75em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .pricing {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        &__top {
+            gap: 3em;
+            &-info {
+                flex-grow: 1;
+            }
+        }
+        &__list {
+            justify-content: center;
+        }
     }
 }

@@ -1,26 +1,33 @@
 .service {
     padding: 8.7em 0 9.37em 0;
-    position: relative;
-    &__title {
-        padding-left: 9.13em;
-        margin-bottom: 0.5em;
-    }
-    &__text {
-        padding-left: 26.25em;
+    &__top {
+        display: flex;
+        gap: 19em;
         margin-bottom: 3.375em;
-        max-width: 63em;
     }
-    &__subtitle {
-        position: absolute;
-        top: 8.7em;
-        left: 0;
+    &__title {
+        margin-bottom: 0.5em;
     }
     &__numbers {
         display: flex;
-        justify-content: space-between;
-        padding-left: 26.25em;
+        gap: 9em;
+        margin-left: 26.25em;
         &-num {
             font-size: 4.125em;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .service {
+        padding-top: 3em;
+        padding-bottom: 3em;
+        &__top {
+            gap: 3em;
+        }
+        &__numbers {
+            margin-left: 0;
+            gap: 5em;
         }
     }
 }

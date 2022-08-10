@@ -13,12 +13,17 @@ export default function Service() {
     {
         num: 240,
         description: 'Companies we serve',
-    }]; 
+    }];
 
     return (<div className='service'>
-        <h2 className='service__subtitle subtitle'>our service is</h2>
-        <h2 className='service__title title'>FeedbackHero in Numbers</h2>
-        <p className="service__text">The FeedbackHero is growing right now and getting more and more every day. Join our service now!</p>
+        <div className="service__top">
+            <h2 className='service__subtitle subtitle'>our service is</h2>
+            <div className="service__top-info">
+                <h2 className='service__title title'>FeedbackHero in Numbers</h2>
+                <p className="service__text">The FeedbackHero is growing right now and getting more and more every day.</p> 
+                <p className="service__text">Join our service now!</p>
+            </div>
+        </div>
         <ul className="service__numbers">
             {serviceInNums.map((item, index) => {
                 return (

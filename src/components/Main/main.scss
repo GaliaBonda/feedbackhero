@@ -1,9 +1,9 @@
 .main {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 6.59em 0 1.53em 0;
     margin-right: -8.75em;
+    gap: 1em;
     &__list {
         display: flex;
         flex-direction: column;
@@ -19,6 +19,15 @@
         margin-bottom: 2.08em;
     }
     &__info {
-        width: 34em;
+        flex: 0 0 34em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        gap: 3em;
+        &__info {
+            flex-grow: 1;
+        }
     }
 }
