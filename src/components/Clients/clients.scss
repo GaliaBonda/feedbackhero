@@ -2,24 +2,23 @@
 
 .clients {
     padding: 8.7em 0 9.37em 0;
+
     &__top {
         display: flex;
-        gap: 20.125em;
+        column-gap: 20.125em;
+        row-gap: 3em;
     }
+
     &__title {
         margin-bottom: 1.35em;
     }
-    
+
 }
 
 @media screen and (max-width: 1200px) {
     .clients {
         padding-top: 3em;
         padding-bottom: 3em;
-       &__top {
-        gap: 3em;
-        justify-content: space-between;
-    } 
     }
-    
+
 }

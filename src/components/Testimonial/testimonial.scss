@@ -2,10 +2,9 @@
 
 .testimonial {
     display: flex;
-
     gap: 3.75em;
+
     &__comment {
-        
         svg {
             width: 45px;
             height: auto;
@@ -13,30 +12,25 @@
             position: absolute;
             left: 0;
         }
+
         &-text {
-        font-size: 1.625em;
-        font-weight: 300;
-        color: $innertitle;
-        line-height: 1.2; 
+            font-size: 1.625em;
+            font-weight: 300;
+            color: $innertitle;
+            line-height: 1.2;
         }
-        
-        // &::before {
-        //     content: url('../../../public/assets/quote.svg');
-        //     width: 45px;
-        //     height: auto;
-        //     display: block;
-        //     position: absolute;
-        //     left: -3.8em;
-        // }
     }
+
     &__author {
         font-weight: 600;
         color: $innertitle;
+
         span {
             display: block;
             opacity: 0.5;
         }
     }
+
     &__info {
         position: relative;
         flex: 0 1 48.75em;
@@ -44,48 +38,65 @@
         padding-left: 6.19em;
         row-gap: 2em;
     }
+
     &__media {
-        // text-align: center;
         flex: 0 1 auto;
+        max-width: 50%;
     }
+
     &__img {
         border-radius: 15px;
     }
+
     &__btns {
         display: flex;
         gap: 1.875em;
         align-self: end;
     }
+
     &__btn {
         background-color: transparent;
         border: none;
         width: 3.125em;
         height: 3.125em;
     }
+
     &__btn:hover svg circle {
         fill: $btnhover;
     }
+
     &__btn:hover svg path {
         fill: #fff;
     }
+
     &__btn-next {
         svg {
             transform: rotate(180deg);
         }
     }
-    
+
 }
 
 @media screen and (max-width: 1200px) {
     .testimonial {
+
         &__info {
             padding-left: 4em;
         }
-        // &__comment {
-        //     &::before {
-        //         left: -3em;
-        //         width: 1.5em;
-        //     }
-        // }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial {
+        justify-content: center;
+
+        &__btns {
+            gap: 5em;
+        }
+
+        &__media {
+            max-width: unset;
+        }
+
     }
 }

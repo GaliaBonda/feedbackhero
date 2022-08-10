@@ -30,9 +30,12 @@
 @media screen and (max-width: 1200px) {
     .companies {
         margin-top: 3em;
+        justify-content: center;
+
         &__title {
             flex-grow: 1;
         }
+
         &__list {
 
             grid-template-rows: 1fr 1fr 1fr;
@@ -44,7 +47,7 @@
 
 @media screen and (max-width: 768px) {
     .companies {
-        justify-content: center;
+
         &__list {
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr;

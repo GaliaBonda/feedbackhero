@@ -12,7 +12,7 @@ export default function SignUp() {
                     and tell you about all the possibilities of FeedbackHero for your business.
                 </p>
                 <div className="sign-up__btns">
-                    <button className="sign-up__sign-btn">SIGN UP</button>
+                    <button className="sign-up__sign-btn app-contrast-btn">SIGN UP</button>
                     <button className="sign-up__request-btn app-btn">Leave a request</button>
                 </div>
             </div>

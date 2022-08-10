@@ -20,7 +20,7 @@ export default function Service() {
             <h2 className='service__subtitle subtitle'>our service is</h2>
             <div className="service__top-info">
                 <h2 className='service__title title'>FeedbackHero in Numbers</h2>
-                <p className="service__text">The FeedbackHero is growing right now and getting more and more every day.</p> 
+                <p className="service__text">The FeedbackHero is growing right now and getting more and more every day.</p>
                 <p className="service__text">Join our service now!</p>
             </div>
         </div>

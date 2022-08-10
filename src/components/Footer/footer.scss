@@ -2,10 +2,9 @@
 
 .footer {
     background-color: $footerbg;
-    padding-top: 6em;
-    padding: 6em 12.5em 6.25em;
-    margin-left: -12.5em;
-    margin-right: -12.5em;
+    padding: 6em 12.62vw 6.25em;
+    margin-left: -12.62vw;
+    margin-right: -12.62vw;
 
     &__img {
         width: 12.5em;
@@ -18,12 +17,6 @@
         color: $accent;
         margin-bottom: 1.58em;
     }
-    &__btn {
-        color: $bg;
-        padding: 0.93em 2em;
-        border-radius: 5px;
-        background-color: $accent;
-    }
 
     &__main {
         display: flex;
@@ -35,11 +28,12 @@
 @media screen and (max-width: 768px) {
     .footer {
         text-align: center;
+
         &__main {
             flex-direction: column;
             row-gap: 3em;
             align-items: center;
-            
+
         }
     }
 }

@@ -1,17 +1,23 @@
 .service {
-    padding: 8.7em 0 9.37em 0;
+    padding: 8.7em 0 9em 0;
+
     &__top {
         display: flex;
-        gap: 19em;
+        column-gap: 19em;
+        row-gap: 3em;
         margin-bottom: 3.375em;
     }
+
     &__title {
         margin-bottom: 0.5em;
     }
+
     &__numbers {
         display: flex;
-        gap: 9em;
+        gap: 1em;
+        justify-content: space-between;
         margin-left: 26.25em;
+
         &-num {
             font-size: 4.125em;
         }
@@ -22,9 +28,7 @@
     .service {
         padding-top: 3em;
         padding-bottom: 3em;
-        &__top {
-            gap: 3em;
-        }
+
         &__numbers {
             margin-left: 0;
             gap: 5em;

@@ -3,14 +3,21 @@
     display: flex;
     gap: 3.75em;
     align-items: center;
+
     &__info {
         flex: 0 0 22.5em;
     }
+
     &__media {
         flex: 0 1 60%;
     }
+
     &__img {
         border-radius: 20px;
+    }
+
+    &__title {
+        margin-bottom: 0.5em;
     }
 }
 
@@ -18,11 +25,13 @@
     .use {
         padding-top: 3em;
         padding-bottom: 3em;
+
         &__info {
-            flex-grow: 1;
+            flex: 1 1 22.5em;
         }
+
         &__media {
-            flex-grow: 1;
+            flex: 1 1 60%;
         }
     }
 }

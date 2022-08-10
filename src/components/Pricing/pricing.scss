@@ -2,18 +2,22 @@
 
 .pricing {
     padding: 8.7em 0 9.37em 0;
+
     &__top {
         display: flex;
-        gap: 22.31em;
+        column-gap: 22.31em;
+        row-gap: 3em;
         margin-bottom: 3.125em;
+
         &-info {
             flex: 0 1 48.75em;
         }
     }
+
     &__title {
         margin-bottom: 0.5em;
     }
-    
+
     &__list {
         display: flex;
         justify-content: start;
@@ -26,12 +30,13 @@
     .pricing {
         padding-top: 3em;
         padding-bottom: 3em;
+
         &__top {
-            gap: 3em;
             &-info {
                 flex-grow: 1;
             }
         }
+
         &__list {
             justify-content: center;
         }

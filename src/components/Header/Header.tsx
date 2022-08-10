@@ -29,8 +29,8 @@ export default function Header() {
                 </>
 
             }
-            {(windowDimensions.width <= 768) && <BurgerMenu openMenu={() => toggleMenu(true)}/>}
-            {menuShown && <MobileMenu closeMenu={() => toggleMenu(false)}/>}
+            {(windowDimensions.width <= 768) && <BurgerMenu openMenu={() => toggleMenu(true)} />}
+            {menuShown && <MobileMenu closeMenu={() => toggleMenu(false)} />}
         </div>
 
     </div>);

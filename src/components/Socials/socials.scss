@@ -1,14 +1,17 @@
+@import '../../app.scss';
+
 .socials {
     display: flex;
     gap: 0.93em;
     margin-top: 2.25em;
+
+    &__item-icon:hover {
+        transform: scale(1.1);
+    }
 }
 
 @media screen and (max-width: 768px) {
     .socials {
-        
-            justify-content: center;
-            
-    
+        justify-content: center;
     }
 }

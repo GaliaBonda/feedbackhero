@@ -1,54 +1,72 @@
 @import '../../app.scss';
 
 .sign-up {
-    padding: 8.7em 0 9.37em 0;
+    padding: 8.7em 0 18.75em 0;
     display: flex;
-    // justify-content: flex-end;
-    gap: 22.4em;
+    column-gap: 22.4em;
+    row-gap: 3em;
+
     &__subtitle {
         flex: 0 0 3.81em;
     }
+
     &__info {
         display: flex;
-        gap: 5.81em;
+        justify-content: space-between;
+        gap: 3em;
     }
+
     &__main {
         flex: 0 1 22.5em;
     }
+
     &__media {
         flex: 0 1 auto;
     }
+
     &__title {
         font-size: 2.875em;
         line-height: 1.17em;
         margin-bottom: 0.5em;
     }
+
     &__text {
         margin-bottom: 3.125em;
     }
+
     &__btns {
         display: flex;
-        justify-content: space-between;
-    }
-    &__sign-btn {
-        color: $bg;
-        padding: 0.93em 2em;
-        border-radius: 5px;
-        background-color: $accent;
+        justify-content: space-around;
+        gap: 1em;
     }
 }
 
+
 @media screen and (max-width: 1200px) {
-    
     .sign-up {
-        gap: 3em;
         padding-top: 3em;
         padding-bottom: 3em;
-        &__main {
-            flex-grow: 1;
+
+        &__info {
+            justify-content: center;
         }
-        &__media {
-            flex-grow: 1;
+
+        &__main {
+            flex: 1 1 22.5em;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sign-up {
+        &__info {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: 2em;
+            font-weight: 500;
         }
     }
 }

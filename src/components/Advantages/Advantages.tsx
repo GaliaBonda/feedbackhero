@@ -15,7 +15,7 @@ function Advantages({ advantages }: Props) {
         <div className="advantages__top">
             <h2 className="advantages__subtitle subtitle">Why Feedbackhero?</h2>
             <div className="advantages__top-info">
-                <h2 className="advantages__title title">Create. Collect. Analyze.Connect BerbackHero today.</h2>
+                <h2 className="advantages__title title">Create. Collect. Analyze. Connect BerbackHero today.</h2>
                 <p className="advantages__text">
                     The FeedbackHero system works for the reputation of your brand. You’ll see your business the way your customers see it.
                     Our surveys have already helped solve hundreds of cases, only yours is missing

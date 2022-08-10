@@ -16,6 +16,7 @@ $accentfont: #3174C4;
 $priceaccent: rgba(18, 18, 18, 0.8);
 $price: #404040;
 $listfont: #4C4F56;
+$itemtitle: #181818;
 
 
 @font-face {
@@ -77,6 +78,7 @@ button {
 button {
     padding: 0;
     border: none;
+    cursor: pointer;
 }
 
 ul,
@@ -100,13 +102,8 @@ img {
     height: auto;
 }
 
-// .container {
-//     max-width: calc(1600px + 2 * 12.5em);
-//     margin: 0 auto;
-// }
-
 .app {
-    padding: 0 12.5em;
+    padding: 0 12.62vw;
 }
 
 .title {
@@ -130,10 +127,25 @@ img {
     text-transform: uppercase;
     padding: 0.93em 2em;
 
+    &:hover {
+        background: $btnhover;
+    }
+}
+
+.app-contrast-btn {
+    color: $bg;
+    padding: 0.93em 2em;
+    border-radius: 5px;
+    background-color: $accent;
+
+    &:hover {
+        background-color: $fontcolor;
+    }
 }
 
 .close-btn {
     background-color: transparent;
+
     svg {
         width: 2.5em;
         height: 2.5em;
@@ -144,30 +156,46 @@ img {
 .link {
     color: $linkfont;
     text-decoration: none;
+
+    &:hover {
+        font-weight: 600;
+    }
 }
 
 @media screen and (max-width: 1200px) {
     * {
         flex-wrap: wrap;
     }
+
     .app {
-        padding: 0 5%;
+        padding: 0 5vw;
     }
+
     .main {
         margin-right: 0;
     }
+
     .header {
-        margin-left: -5%;
-        margin-right: -5%;
+        margin-left: -5vw;
+        margin-right: -5vw;
+
         &__inner {
-            margin-left: 5%;
-            margin-right: 5%;
+            margin-left: 5vw;
+            margin-right: 5vw;
         }
     }
-    .footer, .copyright {
-        margin-left: -5%;
-        margin-right: -5%;
-        padding: 5%;
+
+    .footer,
+    .copyright {
+        margin-left: -5vw;
+        margin-right: -5vw;
+        padding: 5vw;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 2em;
+        font-weight: 500;
+    }
+}

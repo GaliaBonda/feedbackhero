@@ -19,8 +19,8 @@ export default function Use() {
             </div>
         </div>
         <div className="use__media">
-            <img src="./assets/how-to-use.jpg" alt="" className="use__img" width="780" height="500"/>
+            <img src="./assets/how-to-use.jpg" alt="" className="use__img" width="780" height="500" />
         </div>
-        
+
     </div>);
 }

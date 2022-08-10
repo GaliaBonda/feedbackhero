@@ -15,9 +15,9 @@ const initialState: ITestimonial[] = [
             name: 'Some Guy',
             position: 'Some pro',
             company: 'SomeCompany',
-            photo: './assets/client-photo.jpg',
+            photo: './assets/client-photo-2.jpg',
         },
-        comment: 'Another text'
+        comment: 'Another text Another text Another text Another text Another text Another text Another text'
     }
 
 ];
