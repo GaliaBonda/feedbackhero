@@ -1,0 +1,32 @@
+@import '../../app.scss';
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $bg;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3em;
+        font-size: 2em;
+    }
+    &__btn{
+        &.close-btn {
+            position: absolute;
+            right: 5em;
+            top: 5em;
+        }
+        &.register-btn {
+            width: 40vw;
+            font-size: 1.5em;
+        }
+    }
+}
+

@@ -132,6 +132,15 @@ img {
 
 }
 
+.close-btn {
+    background-color: transparent;
+    svg {
+        width: 2.5em;
+        height: 2.5em;
+    }
+
+}
+
 .link {
     color: $linkfont;
     text-decoration: none;
@@ -154,6 +163,10 @@ img {
             margin-left: 10em;
             margin-right: 10em;
         }
+    }
+    .footer, .copyright {
+        margin-left: -10em;
+        margin-right: -10em;
     }
 }
 
