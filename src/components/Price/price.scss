@@ -58,3 +58,9 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .price {
+        flex-shrink: 1;
+    }
+}

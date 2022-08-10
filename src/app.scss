@@ -151,22 +151,23 @@ img {
         flex-wrap: wrap;
     }
     .app {
-        padding: 0 10em;
+        padding: 0 5%;
     }
     .main {
         margin-right: 0;
     }
     .header {
-        margin-left: -10em;
-        margin-right: -10em;
+        margin-left: -5%;
+        margin-right: -5%;
         &__inner {
-            margin-left: 10em;
-            margin-right: 10em;
+            margin-left: 5%;
+            margin-right: 5%;
         }
     }
     .footer, .copyright {
-        margin-left: -10em;
-        margin-right: -10em;
+        margin-left: -5%;
+        margin-right: -5%;
+        padding: 5%;
     }
 }
 

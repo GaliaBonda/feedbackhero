@@ -2,21 +2,32 @@
 
 .testimonial {
     display: flex;
+
     gap: 3.75em;
     &__comment {
-        font-size: 1.625em;
-        font-weight: 300;
-        color: $innertitle;
-        line-height: 1.2;
-        position: relative;
-        &::before {
-            content: url('../../../public/assets/quote.svg');
+        
+        svg {
             width: 45px;
             height: auto;
             display: block;
             position: absolute;
-            left: -3.8em;
+            left: 0;
         }
+        &-text {
+        font-size: 1.625em;
+        font-weight: 300;
+        color: $innertitle;
+        line-height: 1.2; 
+        }
+        
+        // &::before {
+        //     content: url('../../../public/assets/quote.svg');
+        //     width: 45px;
+        //     height: auto;
+        //     display: block;
+        //     position: absolute;
+        //     left: -3.8em;
+        // }
     }
     &__author {
         font-weight: 600;
@@ -27,6 +38,7 @@
         }
     }
     &__info {
+        position: relative;
         flex: 0 1 48.75em;
         display: grid;
         padding-left: 6.19em;
@@ -67,7 +79,13 @@
 @media screen and (max-width: 1200px) {
     .testimonial {
         &__info {
-            padding-left: 0;
+            padding-left: 4em;
         }
+        // &__comment {
+        //     &::before {
+        //         left: -3em;
+        //         width: 1.5em;
+        //     }
+        // }
     }
 }

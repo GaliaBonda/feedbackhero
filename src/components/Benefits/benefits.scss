@@ -36,3 +36,14 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .benefits {
+        &__media {
+            order: 2;
+        }
+        &__info {
+            order: 1;
+        }
+    }
+}

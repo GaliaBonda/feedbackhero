@@ -1,6 +1,5 @@
 import React from 'react';
 import AppList from '../AppList/AppList';
-import Copyright from '../Copyright/Copyright';
 import Socials from '../Socials/Socials';
 import './footer.scss';
 

@@ -31,3 +31,15 @@
         gap: 1em;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+        &__main {
+            flex-direction: column;
+            row-gap: 3em;
+            align-items: center;
+            
+        }
+    }
+}

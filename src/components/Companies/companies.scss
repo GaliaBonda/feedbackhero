@@ -2,6 +2,7 @@
     margin-top: 8.875em;
     display: flex;
     gap: 3.75em;
+
     &__title {
         flex: 0 1 7.82em;
     }
@@ -23,7 +24,7 @@
             padding: 1.56em 2.81em;
         }
     }
-    
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -32,6 +33,22 @@
         &__title {
             flex-grow: 1;
         }
+        &__list {
+
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.875em;
+        }
     }
-    
+}
+
+@media screen and (max-width: 768px) {
+    .companies {
+        justify-content: center;
+        &__list {
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+            gap: 1.875em;
+        }
+    }
 }
