@@ -35,13 +35,14 @@
         position: relative;
         flex: 0 1 48.75em;
         display: grid;
+        height: 23em;
+        grid-template-rows: auto auto 3.125em;
         padding-left: 6.19em;
         row-gap: 2em;
     }
 
     &__media {
-        flex: 0 1 auto;
-        max-width: 50%;
+        flex: 0 1 50%;
     }
 
     &__img {
@@ -94,9 +95,9 @@
             gap: 5em;
         }
 
-        &__media {
-            max-width: unset;
-        }
+        // &__media {
+        //     max-width: unset;
+        // }
 
     }
 }
