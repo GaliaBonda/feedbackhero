@@ -1,5 +1,6 @@
 $fontcolor: rgba(0, 0, 0, 0.75);
 $bg: #fff;
+$accentbg: #FCFCFC;
 $accent: #000;
 $separatorbg: #20273133;
 $innertitle: #202731;
@@ -100,6 +101,12 @@ ul {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.container {
+    max-width: calc(1600px - 12.62vw*2);
+    
+    margin: 0 auto;
 }
 
 .app {

@@ -7,12 +7,12 @@
         display: flex;
         column-gap: 21.625em;
         row-gap: 3em;
-        margin-bottom: 3.06em;
+        margin-bottom: 3em;
 
     }
 
     &__title {
-        margin-bottom: 1.5em;
+        margin-bottom: 0.5em;
     }
 
     &__list {
@@ -22,41 +22,7 @@
         gap: 3.75em;
     }
 
-    &__item {
-        position: relative;
-        border: 1px solid $thinborder;
-        box-shadow: 0px 15px 30px $border;
-        border-radius: 15px;
-        padding: 6em 1.687em 4.19em 1.875em;
-
-        &-title {
-            position: relative;
-            font-weight: 500;
-            font-size: 1.625em;
-            line-height: 1.19em;
-            color: $innertitle;
-            margin-bottom: 2.07em;
-
-            &::before {
-                content: '';
-                position: absolute;
-                height: 1px;
-                left: 0;
-                bottom: calc(-2.07em / 2);
-                right: 75%;
-                background-color: $subtitlecolor;
-            }
-        }
-
-
-        &-icon {
-            position: absolute;
-            top: 2em;
-            right: 1.875em;
-            width: 2.5em;
-            height: 2.5em;
-        }
-    }
+    
 }
 
 @media screen and (max-width: 1200px) {

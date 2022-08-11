@@ -42,7 +42,7 @@
     }
 
     &__media {
-        flex: 0 1 50%;
+        flex: 0 1 22.5em;
     }
 
     &__img {
@@ -80,9 +80,9 @@
 
 @media screen and (max-width: 1200px) {
     .testimonial {
-
         &__info {
             padding-left: 4em;
+            height: unset;
         }
     }
 }
@@ -90,14 +90,10 @@
 @media screen and (max-width: 768px) {
     .testimonial {
         justify-content: center;
-
         &__btns {
             gap: 5em;
+            
         }
-
-        // &__media {
-        //     max-width: unset;
-        // }
 
     }
 }

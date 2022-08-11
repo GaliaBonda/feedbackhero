@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import IFeature from '../../common/interfaces/IFeature';
+import Feature from '../Feature/Feature';
 import './features.scss';
 
 interface Props {
@@ -12,23 +13,24 @@ interface State {
 
 function Features({ features }: Props) {
     return (<div className='features'>
-        <div className="features__top">
-            <h2 className='features__subtitle subtitle'>Features</h2>
-            <div className="features__top-info">
-                <h2 className='features__title title'>Why FeedbackHero?</h2>
-                <p className="features__text">Return customers with NPS service, feedback and FeedbackHero loyalty assessment.</p>
+        <div className="container">
+            <div className="features__top">
+                <h2 className='features__subtitle subtitle'>Features</h2>
+                <div className="features__top-info">
+                    <h2 className='features__title title'>Why FeedbackHero?</h2>
+                    <p className="features__text">Return customers with NPS service, feedback and FeedbackHero loyalty assessment.</p>
+                </div>
             </div>
+
+            <ul className="features__list">
+                {features.map((item) => {
+                    return (
+                        <Feature key={item.id} feature={item} />
+                    );
+                })}
+            </ul>
         </div>
 
-        <ul className="features__list">
-            {features.map((item) => {
-                return (<li className="features__item" key={item.id}>
-                    <img src={item.icon} alt="" className="features__item-icon" />
-                    <h3 className="features__item-title">{item.title}</h3>
-                    <p className="features__item-text">{item.description}</p>
-                </li>);
-            })}
-        </ul>
     </div>);
 }
 

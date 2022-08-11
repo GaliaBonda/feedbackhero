@@ -1,26 +1,31 @@
 import React from 'react';
+import Media from '../Media/Media';
 import './use.scss';
 
 export default function Use() {
-    return (<div className='use'>
-        <div className="use__info">
-            <h2 className='use__subtitle subtitle'>Easy to use</h2>
-            <h2 className="use__title title">How it works?</h2>
-            <div className="use__text">
-                <p className="use__subtext">
-                    We generate a QR code and a short link.
-                    Then you offer it to visitors (leave stickers on the table,
-                    print on table awnings, send by e-mail) and get feedback.
-                </p>
-                <p className="use__subtext">
-                    Through a personal account you will be able to collect statistics of the
-                    received comments and to do mailing.
-                </p>
-            </div>
-        </div>
-        <div className="use__media">
-            <img src="./assets/how-to-use.jpg" alt="" className="use__img" width="780" height="500" />
-        </div>
+    const easyToUse = {
+        directOrder: true,
+        title: 'How it works?',
+        subtitle: 'Easy to use',
+        text: [
+            'We generate a QR code and a short link. Then you offer it to visitors (leave stickers on the table, print on table awnings, send by e-mail) and get feedback.',
+            'Through a personal account you will be able to collect statistics of the received comments and to do mailing.',
+        ],
+        photo: "./assets/how-to-use.jpg",
+    };
+    const whoBenefit = {
+        directOrder: false,
+        title: 'Fits to any business',
+        subtitle: 'Who\'ll benefit?',
+        text: [
+            'FeedbackHero is effective in diferrent areas of business: restaurants, hotels, E-commerce, Auto service, Auto salons & Lease, Beauty & Cosmetics and other business areas'],
+        photo: "./assets/benefits.jpg",
+    }
 
+    return (<div className='use'>
+        <div className="container">
+            <Media content={easyToUse} />
+        <Media content={whoBenefit} />
+        </div>
     </div>);
 }

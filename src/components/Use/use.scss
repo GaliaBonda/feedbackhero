@@ -1,37 +1,16 @@
+@import '../../app.scss';
+
 .use {
-    padding: 9.37em 0;
-    display: flex;
-    gap: 3.75em;
-    align-items: center;
-
-    &__info {
-        flex: 0 0 22.5em;
-    }
-
-    &__media {
-        flex: 0 1 60%;
-    }
-
-    &__img {
-        border-radius: 20px;
-    }
-
-    &__title {
-        margin-bottom: 0.5em;
-    }
+    padding: 9.37em 12.62vw;
+    margin-left: -12.62vw;
+    margin-right: -12.62vw;
+    background-color: $accentbg;
 }
 
 @media screen and (max-width: 1200px) {
     .use {
-        padding-top: 3em;
-        padding-bottom: 3em;
-
-        &__info {
-            flex: 1 1 22.5em;
-        }
-
-        &__media {
-            flex: 1 1 60%;
-        }
+        padding: 5vw;
+        margin-left: -5vw;
+        margin-right: -5vw;
     }
 }

@@ -1,10 +1,15 @@
 @import '../../app.scss';
 
 .sign-up {
-    padding: 8.7em 0 18.75em 0;
-    display: flex;
+    margin-left: -12.62vw;
+    margin-right: -12.62vw;
+    padding: 4em 12.62vw;
+    &__inner {
+       display: flex;
     column-gap: 22.4em;
-    row-gap: 3em;
+    row-gap: 3em; 
+    }
+    
 
     &__subtitle {
         flex: 0 0 3.81em;
@@ -44,8 +49,9 @@
 
 @media screen and (max-width: 1200px) {
     .sign-up {
-        padding-top: 3em;
-        padding-bottom: 3em;
+        padding: 5vw;
+        margin-left: -5vw;
+        margin-right: -5vw;
 
         &__info {
             justify-content: center;

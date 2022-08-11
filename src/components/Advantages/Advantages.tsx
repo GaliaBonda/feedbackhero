@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import IAdvantage from '../../common/interfaces/IAdvantage';
+import Advantage from '../Advantage/Advantage';
 import './advantages.scss';
 
 interface Props {
@@ -12,7 +13,8 @@ interface State {
 
 function Advantages({ advantages }: Props) {
     return (<div className="advantages">
-        <div className="advantages__top">
+        <div className="container">
+            <div className="advantages__top">
             <h2 className="advantages__subtitle subtitle">Why Feedbackhero?</h2>
             <div className="advantages__top-info">
                 <h2 className="advantages__title title">Create. Collect. Analyze. Connect BerbackHero today.</h2>
@@ -26,15 +28,13 @@ function Advantages({ advantages }: Props) {
         <ul className="advantages__list">
             {advantages.map((item) => {
                 return (
-                    <li className="advantages__item" key={item.id}>
-                        <img src={item.icon} alt="" className="advantages__item-icon" />
-                        <h3 className="advantages__item-title">{item.title}</h3>
-                        <h4 className="advantages__item-subtitle">{item.subtitle}</h4>
-                        <p className="advantages__item-text">{item.description}</p>
-                    </li>
+                    <Advantage advantage={item}/>
+                    
                 );
             })}
         </ul>
+        </div>
+        
 
     </div>);
 }

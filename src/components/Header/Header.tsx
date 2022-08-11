@@ -20,7 +20,7 @@ export default function Header() {
     }, []);
 
     return (<div className='header'>
-        <div className="header__inner">
+            <div className="header__inner">
             <img className='header__img logo-img' src="./assets/Feedback-hero-logo.svg" alt="Feedback Hero Logo" />
             {(windowDimensions.width > 768) &&
                 <>
@@ -32,6 +32,7 @@ export default function Header() {
             {(windowDimensions.width <= 768) && <BurgerMenu openMenu={() => toggleMenu(true)} />}
             {menuShown && <MobileMenu closeMenu={() => toggleMenu(false)} />}
         </div>
+        
 
     </div>);
 }

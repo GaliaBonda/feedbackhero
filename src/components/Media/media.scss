@@ -1,0 +1,39 @@
+.media {
+    
+    display: flex;
+    gap: 3.75em;
+    align-items: center;
+    &+.media {
+        margin-top: 3em;
+    }
+    &__info {
+        flex: 0 0 22.5em;
+    }
+
+    &__photo {
+        flex: 0 1 55%;
+    }
+
+    &__img {
+        border-radius: 20px;
+    }
+
+    &__title {
+        margin-bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .media {
+        
+        &__info {
+            flex: 1 1 22.5em;
+        }
+        &__photo {
+            flex: 1 1 55%;
+        }
+        &__img {
+            width: 100%;
+        }
+    }
+}

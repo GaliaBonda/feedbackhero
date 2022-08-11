@@ -60,16 +60,15 @@ function Clients({ testimonials }: Props) {
     }
 
     return (<div className='clients'>
-        <div className="clients__top">
-            <h2 className='clients__subtitle subtitle'>Our clients</h2>
-            <h2 className='clients__title title'>We are trusted</h2>
+        <div className="container">
+            <div className="clients__top">
+                <h2 className='clients__subtitle subtitle'>Our clients</h2>
+                <h2 className='clients__title title'>We are trusted</h2>
+            </div>
+            <Testimonial client={testimonials[currentTestimonial].client} comment={testimonials[currentTestimonial].comment}
+                changeComment={changeComment} />
+            <Companies companies={companies} />
         </div>
-
-        <Testimonial client={testimonials[currentTestimonial].client} comment={testimonials[currentTestimonial].comment}
-            changeComment={changeComment} />
-        <Companies companies={companies} />
-
-
     </div>);
 }
 

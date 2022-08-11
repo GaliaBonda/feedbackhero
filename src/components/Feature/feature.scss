@@ -1,0 +1,39 @@
+@import '../../app.scss';
+
+.feature {
+    &__item {
+        position: relative;
+        border: 1px solid $thinborder;
+        box-shadow: 0px 15px 30px $border;
+        border-radius: 15px;
+        padding: 6em 1.687em 2em 1.875em;
+
+        &-title {
+            position: relative;
+            font-weight: 500;
+            font-size: 1.625em;
+            line-height: 1.19em;
+            color: $innertitle;
+            margin-bottom: 2.07em;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 1px;
+                left: 0;
+                bottom: calc(-2.07em / 2);
+                right: 75%;
+                background-color: $subtitlecolor;
+            }
+        }
+
+
+        &-icon {
+            position: absolute;
+            top: 2em;
+            right: 1.875em;
+            width: 2.5em;
+            height: 2.5em;
+        }
+    }
+}

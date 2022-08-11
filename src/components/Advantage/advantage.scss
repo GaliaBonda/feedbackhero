@@ -1,0 +1,44 @@
+@import '../../app.scss';
+
+.advantage {
+    flex: 0 1 22.5em;
+    box-shadow: 0px 15px 30px $border;
+    border-radius: 10px;
+    padding: 3.125em 1.875em 3.375em 1.875em;
+    text-align: center;
+
+    &__title {
+        font-weight: 500;
+        font-size: 1/25em;
+        line-height: 1.4;
+        color: $itemtitle;
+    }
+
+    &__subtitle {
+        color: $subtitlecolor;
+        font-weight: 500;
+        ;
+        line-height: 1.5;
+    }
+
+    &__icon {
+        width: 5.625em;
+        height: 5.625em;
+        padding: 1.5em;
+        background: linear-gradient(134.83deg, #FCFCFC 4.17%, rgba(252, 252, 252, 0) 96.67%);
+        border: 1px solid $border;
+        filter: drop-shadow(0px 5px 12px $border);
+        border-radius: 10px;
+        margin-bottom: 2.19em;
+    }
+    &__subtitle {
+        margin-bottom: 0.94em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .advantage {
+            flex: 0 0 auto;
+            max-width: 22.5em;
+    }
+}

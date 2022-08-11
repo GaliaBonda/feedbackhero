@@ -13,7 +13,8 @@ interface State {
 
 function Pricing({ prices }: Props) {
     return (<div className='pricing'>
-        <div className="pricing__top">
+        <div className="container">
+            <div className="pricing__top">
             <h2 className='pricing__subtitle subtitle'>Pricing</h2>
             <div className="pricing__top-info">
                 <h2 className='pricing__title title'>We have prepared ideal solutions for your business</h2>
@@ -28,6 +29,8 @@ function Pricing({ prices }: Props) {
                 );
             })}
         </ul>
+        </div>
+        
     </div>);
 }
 

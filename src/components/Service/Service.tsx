@@ -16,7 +16,8 @@ export default function Service() {
     }];
 
     return (<div className='service'>
-        <div className="service__top">
+        <div className="container">
+            <div className="service__top">
             <h2 className='service__subtitle subtitle'>our service is</h2>
             <div className="service__top-info">
                 <h2 className='service__title title'>FeedbackHero in Numbers</h2>
@@ -34,5 +35,7 @@ export default function Service() {
                 );
             })}
         </ul>
+        </div>
+        
     </div>);
 }
