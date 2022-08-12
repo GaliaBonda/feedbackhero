@@ -14,8 +14,8 @@ export default function Footer() {
     ];
 
     const contacts = [
-        <a href="#" className="tel link">+39 333 3333333</a>,
-        <a href="#" className="email link">feedbackhero.info@gmail.com</a>,
+        '+39 333 3333333',
+        'feedbackhero.info@gmail.com',
         <Socials socials={socials} />
     ];
 
@@ -26,9 +26,12 @@ export default function Footer() {
                 <h2 className="footer__title">Your Business Superhero</h2>
                 <button className="footer__btn app-contrast-btn">BUY NOW</button>
             </div>
-            <AppList title='Quick links' list={quickLinks} />
+            <div className="footer__links">
+                <AppList title='Quick links' list={quickLinks} />
             <AppList title='Legal information' list={legalInfo} />
             <AppList title='Contact' list={contacts} />
+            </div>
+            
         </div>
     </div>);
 }

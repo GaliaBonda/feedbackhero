@@ -21,7 +21,18 @@
     &__main {
         display: flex;
         justify-content: space-between;
-        gap: 1em;
+        column-gap: 9em;
+        row-gap: 3em;
+    }
+    &__cta {
+        flex-shrink: 0;
+    }
+    &__links {
+        flex-grow: 1;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 13.82em));
+        justify-content: space-between;
+        column-gap: 1em;
     }
 }
 
@@ -30,6 +41,10 @@
         &__main {
             flex-wrap: wrap;
 
+        }
+        &__links {
+            column-gap: 5em;
+            justify-content: stretch;
         }
     }
 }
@@ -42,6 +57,10 @@
             row-gap: 3em;
             align-items: center;
 
+        }
+        &__links {
+            grid-template-columns: auto;
+            row-gap: 3em;
         }
     }
 }
