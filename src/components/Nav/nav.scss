@@ -1,8 +1,8 @@
 .nav {
+  flex: 0 0 16.125em;
   &__list {
     display: flex;
     justify-content: space-between;
-    column-gap: 3.5em;
   }
 
 }

@@ -26,12 +26,11 @@ export default function Footer() {
                 <h2 className="footer__title">Your Business Superhero</h2>
                 <button className="footer__btn app-contrast-btn">BUY NOW</button>
             </div>
-            <div className="footer__links">
-                <AppList title='Quick links' list={quickLinks} />
+
+            <AppList title='Quick links' list={quickLinks} />
             <AppList title='Legal information' list={legalInfo} />
             <AppList title='Contact' list={contacts} />
-            </div>
-            
+
         </div>
     </div>);
 }

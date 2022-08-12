@@ -14,8 +14,7 @@ export default function AppList({ title, list }: Props) {
                 return (
                     <li className="app-list__item" key={index}>
                         <a href="#" className="app-list__link link">{item}</a>
-                        
-                        </li>
+                    </li>
                 );
             })}
         </ul>

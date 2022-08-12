@@ -19,48 +19,40 @@
     }
 
     &__main {
-        display: flex;
-        justify-content: space-between;
-        column-gap: 9em;
-        row-gap: 3em;
-    }
-    &__cta {
-        flex-shrink: 0;
-    }
-    &__links {
-        flex-grow: 1;
         display: grid;
-        grid-template-columns: repeat(3, minmax(auto, 13.82em));
+        grid-template-columns: 17.93em repeat(3, minmax(auto, 13.82em));
         justify-content: space-between;
-        column-gap: 1em;
+        column-gap: 2em;
     }
+
 }
 
 @media screen and (max-width: 1200px) {
     .footer {
         &__main {
-            flex-wrap: wrap;
-
+            grid-template-columns: repeat(3, minmax(auto, 13.82em));
+            row-gap: 3em;
         }
-        &__links {
-            column-gap: 5em;
-            justify-content: stretch;
+
+        &__cta {
+            grid-column: 1/4;
         }
     }
 }
+
 @media screen and (max-width: 768px) {
     .footer {
         text-align: center;
 
         &__main {
-            flex-direction: column;
-            row-gap: 3em;
-            align-items: center;
+            grid-template-columns: 13.82em;
+            justify-content: center;
 
         }
-        &__links {
-            grid-template-columns: auto;
-            row-gap: 3em;
+
+        &__cta {
+
+            grid-column: unset;
         }
     }
 }
