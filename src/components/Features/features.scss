@@ -7,7 +7,7 @@
         display: flex;
         column-gap: 21.625em;
         row-gap: 3em;
-        margin-bottom: 3em;
+        margin-bottom: 2.5em;
 
     }
 
@@ -18,18 +18,18 @@
     &__list {
         display: grid;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: minmax(auto, 22.5em) minmax(auto, 22.5em) minmax(auto, 22.5em);
-        gap: 3.75em;
+        grid-template-columns: repeat(3, minmax(0, 22.5em));
+        gap: 3em;
     }
-
-    
 }
 
 @media screen and (max-width: 1200px) {
     .features {
         padding-top: 3em;
         padding-bottom: 3em;
-
+        &__top {
+            flex-wrap: wrap;
+        }
         &__list {
             grid-template-rows: 1fr 1fr 1fr;
             grid-template-columns: minmax(auto, 22.5em) minmax(auto, 22.5em);

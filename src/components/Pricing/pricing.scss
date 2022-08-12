@@ -1,7 +1,7 @@
 @import '../../app.scss';
 
 .pricing {
-    padding: 8.7em 0 9.37em 0;
+    padding: 8em 0 4em 0;
 
     &__top {
         display: flex;
@@ -32,6 +32,7 @@
         padding-bottom: 3em;
 
         &__top {
+            flex-wrap: wrap;
             &-info {
                 flex-grow: 1;
             }
@@ -39,6 +40,7 @@
 
         &__list {
             justify-content: center;
+            flex-wrap: wrap;
         }
     }
 }

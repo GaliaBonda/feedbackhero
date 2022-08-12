@@ -25,7 +25,7 @@ export default function Use() {
     return (<div className='use'>
         <div className="container">
             <Media content={easyToUse} />
-        <Media content={whoBenefit} />
+            <Media content={whoBenefit} />
         </div>
     </div>);
 }

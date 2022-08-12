@@ -2,8 +2,8 @@
 
 .testimonial {
     display: flex;
-    gap: 3.75em;
-
+    column-gap: 4.75em;
+    row-gap: 3em;
     &__comment {
         svg {
             width: 45px;
@@ -35,18 +35,20 @@
         position: relative;
         flex: 0 1 48.75em;
         display: grid;
-        height: 23em;
-        grid-template-rows: auto auto 3.125em;
-        padding-left: 6.19em;
+        grid-template-rows: minmax(12.125em, auto) 3.25em 3.125em;
+        padding-left: 6em;
         row-gap: 2em;
     }
 
     &__media {
-        flex: 0 1 22.5em;
+        flex: 0 0 22.5em;
+        height: 22.5em;
     }
 
     &__img {
         border-radius: 15px;
+        display: block;
+        max-height: 100%;
     }
 
     &__btns {
@@ -54,36 +56,22 @@
         gap: 1.875em;
         align-self: end;
     }
-
-    &__btn {
-        background-color: transparent;
-        border: none;
-        width: 3.125em;
-        height: 3.125em;
-    }
-
-    &__btn:hover svg circle {
-        fill: $btnhover;
-    }
-
-    &__btn:hover svg path {
-        fill: #fff;
-    }
-
-    &__btn-next {
-        svg {
-            transform: rotate(180deg);
-        }
-    }
-
 }
 
 @media screen and (max-width: 1200px) {
     .testimonial {
+        flex-wrap: wrap;
         &__info {
             padding-left: 4em;
-            height: unset;
+            grid-template-rows: minmax(0, auto) 3.25em 3.125em;
         }
+        &__media {
+            flex: 1 1 22.5em;
+        }
+        &__img {
+            margin: 0 auto;
+        }
+        
     }
 }
 
@@ -92,7 +80,9 @@
         justify-content: center;
         &__btns {
             gap: 5em;
-            
+        }
+        &__media {
+            height: unset;
         }
 
     }

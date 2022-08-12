@@ -1,7 +1,7 @@
 @import '../../app.scss';
 
 .clients {
-    padding: 8.7em 12.62vw 9.37em 12.62vw;
+    padding: 8em 12.62vw;
     background-color: $accentbg;
     margin-left: -12.62vw;
     margin-right: -12.62vw;
@@ -22,6 +22,9 @@
         padding: 5vw;
         margin-left: -5vw;
         margin-right: -5vw;
+        &__top {
+            flex-wrap: wrap;
+        }
     }
 
 }

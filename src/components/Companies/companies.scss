@@ -12,17 +12,6 @@
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.875em;
-
-        &-item {
-            box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.05);
-            border-radius: 15px;
-            flex: 0 0 15em;
-            height: 10em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1.56em 2.81em;
-        }
     }
 
 }
@@ -31,7 +20,7 @@
     .companies {
         margin-top: 3em;
         justify-content: center;
-
+        flex-wrap: wrap;
         &__title {
             flex-grow: 1;
         }
@@ -47,7 +36,9 @@
 
 @media screen and (max-width: 768px) {
     .companies {
-
+        &__title {
+            flex: 1 0 100%;
+        }
         &__list {
             grid-template-rows: 1fr 1fr 1fr 1fr;
             grid-template-columns: 1fr;

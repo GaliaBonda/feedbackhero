@@ -34,7 +34,9 @@
         padding: 5vw;
         margin-left: -5vw;
         margin-right: -5vw;
-
+        &__top {
+            flex-wrap: wrap;
+        }
         &__numbers {
             margin-left: 0;
             gap: 5em;

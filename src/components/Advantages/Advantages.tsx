@@ -28,7 +28,7 @@ function Advantages({ advantages }: Props) {
         <ul className="advantages__list">
             {advantages.map((item) => {
                 return (
-                    <Advantage advantage={item}/>
+                    <Advantage advantage={item} key={item.id}/>
                     
                 );
             })}

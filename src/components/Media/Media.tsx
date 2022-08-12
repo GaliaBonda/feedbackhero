@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useWindowDimensions from '../../common/hooks/useWindowDimensions';
 import IMediaContent from '../../common/interfaces/IMediaContent';
 import './media.scss';
 
@@ -9,15 +10,7 @@ interface Props {
 export default function Media({ content }: Props) {
     const {directOrder, subtitle, title, text, photo} = content;
     
-    const [windowDimensions, setWindowDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimensions({ width: window.innerWidth, height: window.innerHeight });
-        }
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    const windowDimensions = useWindowDimensions();
 
     return (
         <div className="media">

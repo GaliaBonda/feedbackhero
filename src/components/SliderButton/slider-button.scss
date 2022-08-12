@@ -1,0 +1,22 @@
+@import '../../app.scss';
+
+.slider-btn {
+    background-color: transparent;
+    border: none;
+    width: 3.125em;
+    height: 3.125em;
+
+    &:hover svg circle {
+        fill: $btnhover;
+    }
+
+    &:hover svg path {
+        fill: #fff;
+    }
+
+    &-next {
+        svg {
+            transform: rotate(180deg);
+        }
+    }
+}

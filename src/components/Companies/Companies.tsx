@@ -1,5 +1,6 @@
 import React from 'react';
 import ICompany from '../../common/interfaces/ICompany';
+import Company from '../Company/Company';
 import './companies.scss';
 
 interface Props {
@@ -12,9 +13,7 @@ export default function Companies({ companies }: Props) {
         <h2 className="companies__title title">Companies that have already joined us</h2>
         <ul className="companies__list">
             {companies.map((item) => {
-                return (<li className="companies__list-item" key={item.id}>
-                    <img src={item.logo} alt={item.name} className="companies__img" />
-                </li>);
+                return (<Company key={item.id} logo={item.logo} name={item.name} id={item.id}/>);
             })}
         </ul>
     </div>);

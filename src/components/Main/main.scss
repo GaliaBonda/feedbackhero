@@ -2,9 +2,11 @@
     &__inner {
         display: flex;
         align-items: center;
-        gap: 1em;
-        padding: 6.59em 0 1.53em 0;
-    margin-right: -8.75em;
+        column-gap: 1em;
+        row-gap: 3em;
+        padding: 6.59em 8.75em 1.53em 8.75em;
+        margin-right: -8.75em;
+        margin-left: -8.75em;
     }
 
 
@@ -17,7 +19,8 @@
         border-radius: 15px;
     }
 
-    &__title, &__subtitle {
+    &__title,
+    &__subtitle {
         margin-bottom: 0.65em;
     }
 
@@ -41,7 +44,12 @@
         padding-bottom: 3em;
         gap: 3em;
         justify-content: center;
-
+        &__inner {
+            flex-wrap: wrap;
+            padding: 5vw;
+            margin-left: -5vw;
+            margin-right: -5vw;
+        }
         &__info {
             flex: 1 1 34em;
         }

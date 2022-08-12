@@ -1,20 +1,20 @@
 import React from 'react';
 import IClient from '../../common/interfaces/IClient';
+import SliderButton from '../SliderButton/SliderButton';
 import './testimonial.scss';
 
 interface Props {
     client: IClient;
     comment: string;
     changeComment: (next: boolean) => void;
-
 }
 
 export default function Testimonial({ client, comment, changeComment }: Props) {
+    
     return (<div className="testimonial">
         <div className="testimonial__media">
             <img src={client.photo} alt="Client" className="testimonial__img" />
         </div>
-
         <div className="testimonial__info">
             <div className="testimonial__comment">
                 <svg width="45" height="34" viewBox="0 0 45 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,21 +22,10 @@ export default function Testimonial({ client, comment, changeComment }: Props) {
                 </svg>
                 <p className="testimonial__comment-text">{comment}</p>
             </div>
-
             <p className="testimonial__author">{client.name}, {client.position} <span>{client.company}</span></p>
             <div className="testimonial__btns">
-                <button className="testimonial__btn-prev testimonial__btn" onClick={() => changeComment(false)}>
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="#F8F8F8" stroke="#03A8B7" />
-                        <path d="M21.9168 19.5971C22.0106 19.5033 22.0633 19.3761 22.0633 19.2435C22.0633 19.1109 22.0106 18.9837 21.9168 18.8899C21.8231 18.7961 21.6959 18.7434 21.5633 18.7434C21.4306 18.7434 21.3034 18.7961 21.2097 18.8899L15.5522 24.5473C15.4584 24.6411 15.4057 24.7683 15.4057 24.9009C15.4057 25.0335 15.4584 25.1607 15.5522 25.2545L21.2097 30.9119C21.3034 31.0056 21.4306 31.0583 21.5633 31.0583C21.6959 31.0583 21.8231 31.0056 21.9168 30.9119C22.0106 30.8181 22.0633 30.6909 22.0633 30.5583C22.0633 30.4256 22.0106 30.2985 21.9168 30.2047L17.113 25.4009L34.2925 25.4016C34.4253 25.4016 34.5527 25.3488 34.6466 25.2549C34.7405 25.161 34.7932 25.0337 34.7932 24.9009C34.7932 24.7681 34.7405 24.6407 34.6466 24.5468C34.5527 24.4529 34.4253 24.4002 34.2925 24.4002L17.113 24.4009L21.9168 19.5971Z" fill="#03A8B7" />
-                    </svg>
-                </button>
-                <button className="testimonial__btn-next testimonial__btn" onClick={() => changeComment(true)}>
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle r="24.5" transform="matrix(-1 0 0 1 25 25)" fill="#F8F8F8" stroke="#03A8B7" />
-                        <path d="M21.9168 19.5971C22.0106 19.5033 22.0633 19.3761 22.0633 19.2435C22.0633 19.1109 22.0106 18.9837 21.9168 18.8899C21.8231 18.7961 21.6959 18.7434 21.5633 18.7434C21.4306 18.7434 21.3034 18.7961 21.2097 18.8899L15.5522 24.5473C15.4584 24.6411 15.4057 24.7683 15.4057 24.9009C15.4057 25.0335 15.4584 25.1607 15.5522 25.2545L21.2097 30.9119C21.3034 31.0056 21.4306 31.0583 21.5633 31.0583C21.6959 31.0583 21.8231 31.0056 21.9168 30.9119C22.0106 30.8181 22.0633 30.6909 22.0633 30.5583C22.0633 30.4256 22.0106 30.2985 21.9168 30.2047L17.113 25.4009L34.2925 25.4016C34.4253 25.4016 34.5527 25.3488 34.6466 25.2549C34.7405 25.161 34.7932 25.0337 34.7932 24.9009C34.7932 24.7681 34.7405 24.6407 34.6466 24.5468C34.5527 24.4529 34.4253 24.4002 34.2925 24.4002L17.113 24.4009L21.9168 19.5971Z" fill="#03A8B7" />
-                    </svg>
-                </button>
+                <SliderButton previous={true} changeComment={changeComment}/>
+                <SliderButton previous={false} changeComment={changeComment}/>
             </div>
         </div>
     </div>);

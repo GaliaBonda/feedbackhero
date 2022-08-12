@@ -22,7 +22,7 @@
         display: flex;
         flex-wrap: nowrap;
         gap: 3.75em;
-        align-items: center;
+        align-items: stretch;
     }
 }
 
@@ -32,6 +32,7 @@
         padding-bottom: 3em;
 
         &__top {
+            flex-wrap: wrap;
             &-info {
                 flex: 1 1 48.75em;
             }

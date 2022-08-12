@@ -9,21 +9,18 @@ import Header from './components/Header/Header';
 import Info from './components/Info/Info';
 import Main from './components/Main/Main';
 import Pricing from './components/Pricing/Pricing';
-import Service from './components/Service/Service';
-import SignUp from './components/SignUp/SignUp';
 import Use from './components/Use/Use';
 
 function App() {
   return (
     <div className="app">
       <Header />
-      
-        <Main />
-        <Features />
+      <Main />
+      <Features />
       <Use />
-        <Advantages />
+      <Advantages />
       <Clients />
-        <Pricing />
+      <Pricing />
       <Info />
       <Footer />
       <Copyright />
