@@ -163,7 +163,7 @@ img {
 .link {
     color: $linkfont;
     text-decoration: none;
-
+    display: block;
     &:hover {
         font-weight: 600;
     }
